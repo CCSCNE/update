@@ -58,7 +58,7 @@ function execute_commands($commands, &$stdout, &$stderr) {
 
 
 /**
- * taken from: http://php.net/manual/en/function.shell-exec.php
+ * taken from: http://php.net/manual/en/function.shell-exec.php#67183
  */
 function cmd_exec($cmd, &$stdout, &$stderr)
 {
