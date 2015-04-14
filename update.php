@@ -1,14 +1,9 @@
 <?php
 
-$REPOSITORY_PATHS_TO_UPDATE = array(
-    // Add full paths to commits to update.
-    '/location/of/clone',
-);
 
 
-function main() {
-    global $REPOSITORY_PATHS_TO_UPDATE;
-    $results = update_clones($REPOSITORY_PATHS_TO_UPDATE);
+function main($paths_to_update) {
+    $results = update_clones($paths_to_update);
     report_results($results);
 }
 
@@ -143,4 +138,5 @@ function report_output($result, $channel) {
 }
 
 
-main();
+$paths_to_update = require('paths.php');
+main($paths_to_update);

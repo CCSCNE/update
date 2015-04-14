@@ -26,9 +26,10 @@ Clone the repository to a location under your websites document root.
     $ cd /location/under/document/root
     $ git clone https://github.com/CCSCNE/update.git
     
-Edit update.php and add paths to $clones to the repositories you want updated.
+Copy sample\_paths.php to paths.php and add paths to repositories to be updated.
 
-    $ vim update/update.php
+    $ cp update/sample\_paths.php update/paths.php
+    $ vim update/paths.php
 
 In GitHub, add URL to update.php as a webhook on the source repository.
 
