@@ -54,6 +54,7 @@ function execute_commands($commands, &$stdout, &$stderr) {
             return $exit;
         }
     }
+    return $exit;
 }
 
 
