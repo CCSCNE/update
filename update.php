@@ -45,8 +45,7 @@ function execute_commands($commands, &$stdout, &$stderr) {
     $stdout = array();
     $stderr = array();
     foreach ($commands as $command) {
-        $stdout[] = $command;
-        $stderr[] = $command;
+        $stdout[] = '$ '.$command;
         $exit = cmd_exec($command, $local_stdout, $local_stderr);
         $stdout = array_merge($stdout, $local_stdout);
         $stderr = array_merge($stderr, $local_stderr);
