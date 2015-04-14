@@ -1,7 +1,6 @@
 <?php
 
 
-
 function main($paths_to_update) {
     $results = update_clones($paths_to_update);
     report_results($results);
