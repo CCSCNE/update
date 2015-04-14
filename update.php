@@ -1,23 +1,23 @@
 <?php
 
-$clones = array(
+$REPOSITORY_PATHS_TO_UPDATE = array(
     // Add full paths to commits to update.
     '/location/of/clone',
 );
 
 
 function main() {
-    global $clones;
-    $results = update_clones($clones);
+    global $REPOSITORY_PATHS_TO_UPDATE;
+    $results = update_clones($REPOSITORY_PATHS_TO_UPDATE);
     report_results($results);
 }
 
 
-function update_clones($clones)
+function update_clones($paths)
 {
     $results = array();
-    foreach ($clones as $clone) {
-        $results[] = update_clone($clone);
+    foreach ($paths as $path) {
+        $results[] = update_clone($path);
     }
     return $results;
 }
