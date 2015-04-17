@@ -1,4 +1,6 @@
 <?php
+// Copyright (C) 2015, Stoney Jackson <dr.stoney@gmail.com>
+// License: GPLv3
 
 
 function main($paths_to_update) {
